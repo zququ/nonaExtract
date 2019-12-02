@@ -353,7 +353,15 @@ nameline = f5.readlines()
 total_value = 0
 for each_line in nameline:
     value1 = 0
-    for each_str1 in each_line[0]:    # modify the motif position
+    value2 = 0
+    value3 = 0
+    value4 = 0
+    value5 = 0
+    value6 = 0
+    value7 = 0
+    value8 = 0
+    value9 = 0
+    for each_str1 in each_line[0]:    # modify the motif position  
         for each_str2 in each_line[1]:
             for each_str9 in each_line[8]:
                 for each_str3 in each_line[2]:
@@ -371,10 +379,9 @@ for each_line in nameline:
                                         value7 = dict7[each_str7]
                                         value8 = dict8[each_str8]
                                         value9 = dict9[each_str9]
-
-                f6 = open('value.txt', 'a')
-                f6.write(str(value1 + value2 + value9 + value3 + value4 + value5 + value6 + value7 + value8) + '\n')
-                f6.close()
+                                        f6 = open('value.txt', 'a')
+                                        f6.write(str(value1 + value2 + value9 + value3 + value4 + value5 + value6 + value7 + value8) + '\n')
+                                        f6.close()
 
 f5.close()
 f6.close()
@@ -413,8 +420,20 @@ for line in range(limit_number):
     f12.close()
 
 
-wb.save("test.xlsx")
+wb.save("output.xlsx")
 
 f9.close()
 f5.close()
+
+import os, sys
+
+os.remove('count_result.txt')
+os.remove('deSample_output_deenter.txt')
+os.remove('deSample_output.txt')
+os.remove('process2nona_output.txt')
+os.remove('processed_sequence.fasta')
+os.remove('proName_and_number.txt')
+os.remove('ProName_output.txt')
+os.remove('value.txt')
+#, 'deSample_output_deenter.txt', 'deSample_output.txt', 'process2nona_output.txt', 'processed_sequence.fasta', 'proName_and_number.txt', 'ProName_output.txt', 'value.txt')
 

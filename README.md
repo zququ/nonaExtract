@@ -1,11 +1,10 @@
 # nonaExtract
 
-> Used to process fasta format AA sequence into nona-peptide.
+> Used to process fasta format AA sequence into nona-peptide and scoring
 
 ### Instruction
 
-1. Make a fasta sequence file.
-2. Add an '@' at the end of the last AA sequence.
-3. Run process2nona.py.
-4. Peptide will process to nona-peptide with @ seperated.
-5. count_result will help locate where every nonapeptide is from.
+1. Install python
+2. the dependence, openpyxl. Maybe, just with command line: `pip install openpyxl`
+3. Make a fasta file with fasta formatted sequence, maybe just download from the NCBI protein database.
+4. Run process2nona.py.
