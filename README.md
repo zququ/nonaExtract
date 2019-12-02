@@ -4,7 +4,7 @@
 
 ### Instruction
 
-1. Install python
-2. the dependence, openpyxl. Maybe, just with command line: `pip install openpyxl`
+1. Install python.
+2. the dependence, openpyxl. Maybe, just with command line: `pip install openpyxl`.
 3. Make a fasta file with fasta formatted sequence, maybe just download from the NCBI protein database.
-4. Run process2nona.py.
+4. Run nonaExtract.py.
