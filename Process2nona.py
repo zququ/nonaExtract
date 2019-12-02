@@ -1,5 +1,4 @@
 # modify the original file
-
 f = open('sequence.fasta', 'r')
 f0 = open('processed_sequence.fasta', 'w')
 
@@ -11,6 +10,7 @@ print(ori_lines)
 f0.write(ori_lines[-1] + '@')
 f0.close()
 
+# Process The sequence.fasta to nonapeptide
 f0 = open('processed_sequence.fasta', 'r')
 f_countAA = open('deSample_output.txt', 'w')
 f_proName = open('ProName_output.txt', 'w')
@@ -74,6 +74,7 @@ for i in range(len(lst)-9):
 f4.close()
 f5.close()
 
+# count for sequence, locate the sequence number
 
 f6 = open('deSample_output_deenter.txt', 'r')
 f7 = open('count_result.txt', 'w+')
@@ -109,6 +110,8 @@ f9.close()
 f10.close()
 #print(ProName[line_number][:-1])
 
+# link the Protein Name and the sequence number
+
 for i in range(limit_number):
     f8 = open('ProName_output.txt', 'r')
     f9 = open('proName_and_number.txt', 'a')
@@ -132,10 +135,11 @@ for i in range(limit_number):
     f9.close()
     f10.close()
 
-
 f8.close()
 f9.close()
 f10.close()
+
+# calculate the score, change the value
 
 
 dict1 = {'A': 1,
@@ -182,6 +186,28 @@ dict2 = {'A': 1,
         'Y': 1
         }
 
+dict3 = {'A': 1,
+        'C': 1,
+        'D': 1,
+        'E': 1,
+        'F': 1,
+        'G': 1,
+        'H': 1,
+        'I': 1,
+        'K': 1,
+        'L': 1,
+        'M': 1,
+        'N': 1,
+        'P': 1,
+        'Q': 1,
+        'R': 1,
+        'S': 1,
+        'T': 1,
+        'V': 1,
+        'W': 1,
+        'Y': 1
+        }
+
 
 dict9 = {'A': 1,
         'C': 1,
@@ -205,6 +231,122 @@ dict9 = {'A': 1,
         'Y': 1
         }
 
+
+# not used usullY
+
+dict4 = {'A': 0,
+        'C': 0,
+        'D': 0,
+        'E': 0,
+        'F': 0,
+        'G': 0,
+        'H': 0,
+        'I': 0,
+        'K': 0,
+        'L': 0,
+        'M': 0,
+        'N': 0,
+        'P': 0,
+        'Q': 0,
+        'R': 0,
+        'S': 0,
+        'T': 0,
+        'V': 0,
+        'W': 0,
+        'Y': 0
+        }
+
+
+dict5 = {'A': 0,
+        'C': 0,
+        'D': 0,
+        'E': 0,
+        'F': 0,
+        'G': 0,
+        'H': 0,
+        'I': 0,
+        'K': 0,
+        'L': 0,
+        'M': 0,
+        'N': 0,
+        'P': 0,
+        'Q': 0,
+        'R': 0,
+        'S': 0,
+        'T': 0,
+        'V': 0,
+        'W': 0,
+        'Y': 0
+        }
+
+dict6 = {'A': 0,
+        'C': 0,
+        'D': 0,
+        'E': 0,
+        'F': 0,
+        'G': 0,
+        'H': 0,
+        'I': 0,
+        'K': 0,
+        'L': 0,
+        'M': 0,
+        'N': 0,
+        'P': 0,
+        'Q': 0,
+        'R': 0,
+        'S': 0,
+        'T': 0,
+        'V': 0,
+        'W': 0,
+        'Y': 0
+        }
+
+
+dict7 = {'A': 0,
+        'C': 0,
+        'D': 0,
+        'E': 0,
+        'F': 0,
+        'G': 0,
+        'H': 0,
+        'I': 0,
+        'K': 0,
+        'L': 0,
+        'M': 0,
+        'N': 0,
+        'P': 0,
+        'Q': 0,
+        'R': 0,
+        'S': 0,
+        'T': 0,
+        'V': 0,
+        'W': 0,
+        'Y': 0
+        }
+
+
+dict8 = {'A': 0,
+        'C': 0,
+        'D': 0,
+        'E': 0,
+        'F': 0,
+        'G': 0,
+        'H': 0,
+        'I': 0,
+        'K': 0,
+        'L': 0,
+        'M': 0,
+        'N': 0,
+        'P': 0,
+        'Q': 0,
+        'R': 0,
+        'S': 0,
+        'T': 0,
+        'V': 0,
+        'W': 0,
+        'Y': 0
+        }
+
 f5 = open('process2nona_output.txt', 'r')
 f6 = open('value.txt', 'w')
 nameline = f5.readlines()
@@ -214,12 +356,24 @@ for each_line in nameline:
     for each_str1 in each_line[0]:    # modify the motif position
         for each_str2 in each_line[1]:
             for each_str9 in each_line[8]:
-                value1 = dict1[each_str1]
-                value2 = dict2[each_str2]
-                value9 = dict9[each_str9]
+                for each_str3 in each_line[2]:
+                    for each_str4 in each_line[3]:
+                        for each_str5 in each_line[4]:
+                            for each_str6 in each_line[5]:
+                                for each_str7 in each_line[6]:
+                                    for each_str8 in each_line[7]:
+                                        value1 = dict1[each_str1]
+                                        value2 = dict2[each_str2]
+                                        value3 = dict3[each_str3]
+                                        value4 = dict4[each_str4]
+                                        value5 = dict5[each_str5]
+                                        value6 = dict6[each_str6]
+                                        value7 = dict7[each_str7]
+                                        value8 = dict8[each_str8]
+                                        value9 = dict9[each_str9]
 
                 f6 = open('value.txt', 'a')
-                f6.write(str(value1 + value2 + value9) + '\n')
+                f6.write(str(value1 + value2 + value9 + value3 + value4 + value5 + value6 + value7 + value8) + '\n')
                 f6.close()
 
 f5.close()
