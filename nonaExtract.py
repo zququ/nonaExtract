@@ -1,3 +1,23 @@
+#
+#  Created by Zehui Qu on 2019/12/02.
+#  Copyright © 2019 zququ. All rights reserved.
+#
+# nonaExtract
+# Used to process fasta format AA sequence into nona-peptide and scoring
+
+# Instruction:
+
+# 1. Install python.
+# 2. Install the dependence, openpyxl. Maybe, just with command line: pip install openpyxl.
+# 3. Make a fasta file with fasta formatted sequence, maybe just download from the NCBI protein database.
+# 4. Run nonaExtract.py.
+
+# To use this easy script, please cite:
+
+# Structure and Peptidome of the Bat MHC Class I Molecule Reveal a Novel Mechanism Leading to High-Affinity Peptide Binding Zehui Qu, Zibin Li, Lizhen Ma, Xiaohui Wei, Lijie Zhang, Ruiying Liang, Geng Meng, Nianzhi Zhang and Chun Xia J Immunol May 10, 2019, ji1900001; DOI: https://doi.org/10.4049/jimmunol.1900001
+
+# Any further question, feel free to contact the author, Zehui Qu: qzh813@gmail.com
+
 # modify the original file
 f = open('sequence.fasta', 'r')
 f0 = open('processed_sequence.fasta', 'w')
@@ -166,24 +186,24 @@ dict1 = {'A': 1,
 
 dict2 = {'A': 1,
         'C': 1,
-        'D': 1,
+        'D': 2,
         'E': 1,
         'F': 1,
         'G': 1,
         'H': 1,
         'I': 1,
-        'K': 1,
+        'K': 2,
         'L': 1,
         'M': 1,
         'N': 1,
-        'P': 1,
+        'P': 2,
         'Q': 1,
         'R': 1,
         'S': 1,
         'T': 1,
         'V': 1,
         'W': 1,
-        'Y': 1
+        'Y': 2
         }
 
 dict3 = {'A': 1,
