@@ -407,53 +407,51 @@ f5.close()
 f6.close()
 
 
-import openpyxl
+# import openpyxl
 
-f9 = open('proName_and_number.txt', 'r')
-f5 = open('process2nona_output.txt', 'r')
-f12 = open('value.txt', 'r')
+# f9 = open('proName_and_number.txt', 'r')
 
-wb = openpyxl.Workbook()
-ws = wb.active
-n = 0
-limit_number = len(f9.readlines())
-f9.seek(0)
+# wb = openpyxl.Workbook()
+# ws = wb.active
+# n = 0
+# limit_number = len(f9.readlines())
 
-for line in range(limit_number):
-    f9 = open('proName_and_number.txt', 'r')
-    f5 = open('process2nona_output.txt', 'r')
-    f12 = open('value.txt', 'r')
+# for line in range(limit_number):
+    # f9 = open('proName_and_number.txt', 'r')
+    # f5 = open('process2nona_output.txt', 'r')
+    # f12 = open('value.txt', 'r')
 
-    name_inf = f9.readlines()[n]
-    pep_inf = f5.readlines()[n]
-    value_inf = f12.readlines()[n]
-    n += 1
-    name1 = 'A' + str(n)
-    name2 = 'B' + str(n)
-    name3 = 'C' + str(n)
-    ws[name1] = name_inf
-    ws[name2] = pep_inf
-    ws[name3] = value_inf
+    # name_inf = f9.readlines()[n]
+    # pep_inf = f5.readlines()[n]
+    # value_inf = f12.readlines()[n]
+    # n += 1
+    # name1 = 'A' + str(n)
+    # name2 = 'B' + str(n)
+    # name3 = 'C' + str(n)
+    # ws[name1] = name_inf
+    # ws[name2] = pep_inf
+    # ws[name3] = value_inf
 
-    f9.close()
-    f5.close()
-    f12.close()
+    # f9.close()
+    # f5.close()
+    # f12.close()
 
 
-wb.save("output.xlsx")
+# wb.save("output.xlsx")
 
-f9.close()
-f5.close()
+# f9.close()
+# f5.close()
+# f12.close()
 
 import os, sys
 
 os.remove('count_result.txt')
 os.remove('deSample_output_deenter.txt')
 os.remove('deSample_output.txt')
-os.remove('process2nona_output.txt')
+# os.remove('process2nona_output.txt')
 os.remove('processed_sequence.fasta')
-os.remove('proName_and_number.txt')
+# os.remove('proName_and_number.txt')
 os.remove('ProName_output.txt')
-os.remove('value.txt')
+# os.remove('value.txt')
 #, 'deSample_output_deenter.txt', 'deSample_output.txt', 'process2nona_output.txt', 'processed_sequence.fasta', 'proName_and_number.txt', 'ProName_output.txt', 'value.txt')
 
