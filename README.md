@@ -37,7 +37,7 @@
 
 #### 对于要处理数据量较大的情况
 
-如果数据量很大，openpyxl 将运行非常缓慢。因此，我建议使用** nonaExtract_long.py **，它已删除了 openpyxl 依赖。 之后可以手动打开自己的空白 excel 文件，并将 proName_and_number.txt 复制到 excel 文件的 A 列，然后将 process2nona_output.txt 复制到 B 列，并将value.txt复制到 C 列。
+如果数据量很大，openpyxl 将运行非常缓慢。因此，我建议使用**nonaExtract_long.py**，它已删除了 openpyxl 依赖。 之后可以手动打开自己的空白 excel 文件，并将 proName_and_number.txt 复制到 excel 文件的 A 列，然后将 process2nona_output.txt 复制到 B 列，并将value.txt复制到 C 列。
 
 ### 版权与引用
 
