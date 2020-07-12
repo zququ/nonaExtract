@@ -162,93 +162,93 @@ f10.close()
 # calculate the score, change the value
 
 
-dict1 = {'A': -0.58,
-        'C': -100,
-        'D': -100,
-        'E': -2.11,
-        'F': -1.03,
-        'G': -100,
-        'H': -0.47,
-        'I': 0.89,
-        'K': 1.97,
-        'L': 0.89,
-        'M': 0.33,
-        'N': -100,
-        'P': -100,
-        'Q': -100,
-        'R': 2.16,
-        'S': -2.11,
-        'T': -0.82,
-        'V': 0.87,
-        'W': -100,
-        'Y': -1.70
+dict1 = {'A': 1,
+        'C': 1,
+        'D': 1,
+        'E': 1,
+        'F': 1,
+        'G': 1,
+        'H': 1,
+        'I': 1,
+        'K': 1,
+        'L': 1,
+        'M': 1,
+        'N': 1,
+        'P': 1,
+        'Q': 1,
+        'R': 1,
+        'S': 1,
+        'T': 1,
+        'V': 1,
+        'W': 1,
+        'Y': 1
         }
 
-dict2 = {'A': 0.14,
-        'C': -100,
-        'D': -1.37,
-        'E': -1.82,
-        'F': -1.96,
-        'G': -1.58,
-        'H': 0.78,
-        'I': 0.41,
-        'K': 1.09,
-        'L': 0.41,
-        'M': 0.33,
-        'N': -100,
-        'P': -100,
-        'Q': -1.37,
-        'R': -2.61,
-        'S': -1.37,
-        'T': -2.11,
-        'V': 0.47,
-        'W': -100,
-        'Y': -100
+dict2 = {'A': 1,
+        'C': 1,
+        'D': 2,
+        'E': 1,
+        'F': 1,
+        'G': 1,
+        'H': 1,
+        'I': 1,
+        'K': 2,
+        'L': 1,
+        'M': 1,
+        'N': 1,
+        'P': 2,
+        'Q': 1,
+        'R': 1,
+        'S': 1,
+        'T': 1,
+        'V': 1,
+        'W': 1,
+        'Y': 2
         }
 
-dict3 = {'A': -0.53,
-        'C': -100,
-        'D': -1.70,
-        'E': -100,
-        'F': 2.36,
-        'G': -1.47,
-        'H': -0.15,
-        'I': 0.13,
-        'K': -1.82,
-        'L': 0.13,
-        'M': -0.11,
-        'N': -1.82,
-        'P': -1.47,
-        'Q': -100,
-        'R': -0.33,
-        'S': -0.58,
-        'T': -2.11,
-        'V': -1.03,
-        'W': 1.21,
-        'Y': 1.54
+dict3 = {'A': 1,
+        'C': 1,
+        'D': 1,
+        'E': 1,
+        'F': 1,
+        'G': 1,
+        'H': 1,
+        'I': 1,
+        'K': 1,
+        'L': 1,
+        'M': 1,
+        'N': 1,
+        'P': 1,
+        'Q': 1,
+        'R': 1,
+        'S': 1,
+        'T': 1,
+        'V': 1,
+        'W': 1,
+        'Y': 1
         }
 
 
-dict9 = {'A': -100,
-        'C': -100,
-        'D': -100,
-        'E': -2.28,
-        'F': 0.65,
-        'G': -100,
-        'H': 0.36,
-        'I': -0.64,
-        'K': 1.09,
-        'L': -0.64,
-        'M': -100,
-        'N': -100,
-        'P': -0.37,
-        'Q': -100,
-        'R': 2.27,
-        'S': -2.11,
-        'T': -2.11,
-        'V': -0.42,
-        'W': -0.76,
-        'Y': 2.23
+dict9 = {'A': 1,
+        'C': 1,
+        'D': 1,
+        'E': 1,
+        'F': 1,
+        'G': 1,
+        'H': 1,
+        'I': 1,
+        'K': 1,
+        'L': 1,
+        'M': 1,
+        'N': 1,
+        'P': 1,
+        'Q': 1,
+        'R': 1,
+        'S': 1,
+        'T': 1,
+        'V': 1,
+        'W': 1,
+        'Y': 1
         }
 
 
@@ -407,41 +407,41 @@ f5.close()
 f6.close()
 
 
-# import openpyxl
+import openpyxl
 
-# f9 = open('proName_and_number.txt', 'r')
+f9 = open('proName_and_number.txt', 'r')
 
-# wb = openpyxl.Workbook()
-# ws = wb.active
-# n = 0
-# limit_number = len(f9.readlines())
+wb = openpyxl.Workbook()
+ws = wb.active
+n = 0
+limit_number = len(f9.readlines())
 
-# for line in range(limit_number):
-    # f9 = open('proName_and_number.txt', 'r')
-    # f5 = open('process2nona_output.txt', 'r')
-    # f12 = open('value.txt', 'r')
+for line in range(limit_number):
+    f9 = open('proName_and_number.txt', 'r')
+    f5 = open('process2nona_output.txt', 'r')
+    f12 = open('value.txt', 'r')
 
-    # name_inf = f9.readlines()[n]
-    # pep_inf = f5.readlines()[n]
-    # value_inf = f12.readlines()[n]
-    # n += 1
-    # name1 = 'A' + str(n)
-    # name2 = 'B' + str(n)
-    # name3 = 'C' + str(n)
-    # ws[name1] = name_inf
-    # ws[name2] = pep_inf
-    # ws[name3] = value_inf
+    name_inf = f9.readlines()[n]
+    pep_inf = f5.readlines()[n]
+    value_inf = f12.readlines()[n]
+    n += 1
+    name1 = 'A' + str(n)
+    name2 = 'B' + str(n)
+    name3 = 'C' + str(n)
+    ws[name1] = name_inf
+    ws[name2] = pep_inf
+    ws[name3] = value_inf
 
-    # f9.close()
-    # f5.close()
-    # f12.close()
+    f9.close()
+    f5.close()
+    f12.close()
 
 
-# wb.save("output.xlsx")
+wb.save("output.xlsx")
 
-# f9.close()
-# f5.close()
-# f12.close()
+f9.close()
+f5.close()
+f12.close()
 
 import os, sys
 
