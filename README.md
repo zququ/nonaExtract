@@ -47,7 +47,9 @@
 2. Install the dependence, openpyxl. Maybe, just with command line: `pip install openpyxl`.
 3. Make a fasta file with fasta formatted sequence, maybe just download from the NCBI protein database.
 4. fill in the score at relative position in the script, as shown in the figure below.
+ 
 ![figure1](/pic/2019-12-17_21-39-06.png)
+
 5. Run **nonaExtract_lite.py**.
 6. The result will be shown in the output.xlsx with protein accession number at A column, processed nona-peptide at B column and the score at C column.
 
